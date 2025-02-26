@@ -1,0 +1,19 @@
+{
+  "homepage": "https://JeLee-river.github.io/jenna-wiki",
+  "name": "jenna-wiki",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "jenna's wiki introduction",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "--jest-no-cache",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+  },
+  "author": "JeLee-river",
+  "license": "ISC",
+  "devDependencies": {
+    "gh-pages": "^6.3.0"
+  }
+}
