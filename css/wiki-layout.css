@@ -25,6 +25,22 @@ header {
   padding-top: var(--page-padding);
   width: var(--header-width);
   background-color: var(--header-bg-color);
+  background-image: linear-gradient(
+    to top,
+    #0a0202 5%,
+    #160f12 10%,
+    #1d181d 18%,
+    #222129 30%,
+    #263940 60%,
+    #2b3d4b 70%,
+    #2d4656 80%,
+    #374f67 85%,
+    #455878 90%,
+    #596088 93%,
+    #646690 96%,
+    #706795 100%
+  );
+
   flex-shrink: 0;
 }
 
@@ -37,6 +53,7 @@ h1.logo {
 h1.logo span.text {
   padding: 16px;
   font-size: 1.8rem;
+  color: var(--font-header-color);
 }
 
 main {
@@ -124,6 +141,7 @@ aside {
   padding-top: var(--page-padding-top);
   width: var(--aside-width);
   background-color: var(--aside-bg-color);
+
   flex-shrink: 0;
 }
 
@@ -181,4 +199,5 @@ footer p {
 
   --divider-color: #efefef;
   --font-default-color: #333;
+  --font-header-color: #f6f6f6;
 }
