@@ -61,7 +61,6 @@ h4 {
 section > p,
 article > p {
   line-height: 24px;
-  text-indent: 8px;
 }
 
 section,
@@ -91,7 +90,7 @@ div.thumbnail {
 section::after {
   content: '';
   display: block;
-  margin-top: var(--page-subtitle-margin-y);
+  margin: var(--page-subtitle-margin-y) 0;
   border-bottom: 1px solid var(--divider-color);
 }
 
