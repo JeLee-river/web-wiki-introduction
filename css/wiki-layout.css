@@ -81,6 +81,12 @@ div.thumbnail {
   grid-template-columns: repeat(3, 1fr);
 }
 
+.gallery > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 section::after {
   content: '';
   display: block;
