@@ -6,7 +6,7 @@
   "description": "jenna's wiki introduction",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
+    "start": "node js/index.js",
     "test": "--jest-no-cache",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
