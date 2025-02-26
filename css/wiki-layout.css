@@ -87,6 +87,28 @@ div.thumbnail {
   object-fit: cover;
 }
 
+.favorite-work-container {
+  display: flex;
+  justify-content: center;
+}
+
+.favorite-work > img {
+  width: 300px;
+  height: 100%;
+  object-fit: cover;
+}
+
+.favorite-work-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 20px;
+
+  font-size: 18px;
+  line-height: 150%;
+  letter-spacing: 0.5px;
+}
+
 section::after {
   content: '';
   display: block;
