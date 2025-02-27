@@ -158,6 +158,18 @@ textarea {
   border-radius: 4px;
 }
 
+textarea:focus {
+  outline: none;
+}
+
+textarea:focus::placeholder {
+  color: transparent;
+}
+
+textarea:focus::-ms-input-placeholder {
+  color: transparent;
+}
+
 ol.contents {
   list-style-type: decimal;
   padding: 24px;
@@ -204,10 +216,16 @@ ol.contents li a {
 .comment-list {
   display: flex;
   flex-direction: column;
-  gap: 16px;
 
   line-height: 150%;
   letter-spacing: 0.5px;
+}
+
+.comment-list > li:not(:last-child)::after {
+  content: '';
+  display: block;
+  margin: var(--page-comment-margin-y) 0;
+  border-bottom: 1px solid var(--divider-color);
 }
 
 .comment-author {
@@ -233,6 +251,7 @@ footer p {
   --page-padding: 48px;
   --page-subtitle-margin-y: 32px;
   --page-paragraph-margin-y: 16px;
+  --page-comment-margin-y: 16px;
   --right-sidebar-padding: 32px;
 
   --header-width: 235px;
