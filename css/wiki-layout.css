@@ -79,7 +79,7 @@ div.thumbnail {
 
 .gallery {
   display: grid !important;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 270px);
   gap: 1px;
 }
 
